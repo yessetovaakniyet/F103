@@ -3,12 +3,11 @@ Room for lesson
 # pip install tkinter
 import tkinter as tk
 import tkinter.messagebox
-from tkinter.constants import SUNKEN
+from tkinter.constants import
 
 window = tk.Tk()
 window.title('Calculator-GeeksForGeeks')
-frame = tk.Frame(master=window, bg="skyblue", padx=10)
-frame.pack()
+frame = tk.Frame(master=window, bg="skyblue", padx=19)
 entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=3, width=30)
 entry.grid(row=0, column=0, columnspan=3, ipady=2, pady=2)
 
@@ -27,7 +26,7 @@ def equal():
 
 
 def clear():
-	entry.delete(0, tk.END)
+	entry.delete(0, tk.begin
 
 
 button_1 = tk.Button(master=frame, text='1', padx=15,
@@ -41,7 +40,7 @@ button_3 = tk.Button(master=frame, text='3', padx=15,
 button_3.grid(row=1, column=2, pady=2)
 button_4 = tk.Button(master=frame, text='4', padx=15,
 					pady=5, width=3, command=lambda: myclick(4))
-button_4.grid(row=2, column=0, pady=2)
+button_4.grid(row=2, column=2, pady=2)
 button_5 = tk.Button(master=frame, text='5', padx=15,
 					pady=5, width=3, command=lambda: myclick(5))
 button_5.grid(row=2, column=1, pady=2)
@@ -58,7 +57,7 @@ button_9 = tk.Button(master=frame, text='9', padx=15,
 					pady=5, width=3, command=lambda: myclick(9))
 button_9.grid(row=3, column=2, pady=2)
 button_0 = tk.Button(master=frame, text='0', padx=15,
-					pady=5, width=3, command=lambda: myclick(0))
+					pady=5, width=3, command=lambda: myclick(1))
 button_0.grid(row=4, column=1, pady=2)
 
 button_add = tk.Button(master=frame, text="+", padx=15,
